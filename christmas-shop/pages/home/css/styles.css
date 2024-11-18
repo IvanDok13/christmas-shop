@@ -51,6 +51,18 @@ body {
 	margin: 0 auto;
 }
 
+.section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 60px 82px;
+	background-color: #ff4646;
+	background-image: url(../../../assets/img/bg-snow.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .action-small {
 	font-size: 12px;
 	font-weight: 600;
@@ -195,15 +207,6 @@ body {
 /* about */
 
 .about {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 60px 82px;
-	background-color: #ff4646;
-	background-image: url(../../../assets/img/bg-snow.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 	color: #181c29;
 	text-align: center;
 }
