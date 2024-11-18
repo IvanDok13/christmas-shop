@@ -15,6 +15,17 @@
 	src: url('../../../fonts/montserrat-v29-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* allura-regular - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Allura';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../../../fonts/allura-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* common */
+
 * {
 	text-decoration: none;
 	list-style-type: none;
@@ -38,7 +49,6 @@ body {
 .container {
 	max-width: 1440px;
 	margin: 0 auto;
-	padding: 0 40px;
 }
 
 .action-small {
@@ -48,6 +58,23 @@ body {
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
 }
+
+.caption {
+	font-family: 'Allura';
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 100%;
+	letter-spacing: 0.05em;
+}
+
+.header1 {
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 150%;
+	letter-spacing: 0.175em;
+	text-transform: uppercase;
+}
+
 /* header */
 
 .header {
@@ -62,13 +89,13 @@ body {
 
 .header__logo {
 	z-index: 3;
-	padding: 8px 20px;
 	cursor: pointer;
 }
 
 .header__logo a {
 	display: flex;
 	align-items: center;
+	padding: 8px 20px;
 }
 
 .header__logo img {
@@ -85,8 +112,12 @@ body {
 .header__item {
 	font-family: 'Montserrat';
 	margin-right: 8px;
-	padding: 12px 20px;
 	cursor: pointer;
+}
+
+.header__link {
+	display: block;
+	padding: 12px 20px;
 }
 
 .header__item:last-child {
@@ -97,4 +128,54 @@ body {
 	color: #ff4646;
 	background-color: rgba(255, 70, 70, 0.1);
 	border-radius: 12px;
+}
+
+/* gifts */
+
+.gifts {
+	background-color: #ff4646;
+	border-radius: 20px 20px 0 0;
+	background-image: url(../../../assets/img/bg-ball.png),
+		url(../../../assets/img/bg-snow.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding: 60px 0;
+	color: #ffffff;
+	text-align: center;
+	height: 524px;
+}
+
+.gifts__wrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 60px 0;
+}
+
+.gifts__text {
+	margin-bottom: 12px;
+}
+
+.gifts__title {
+	width: 426px;
+	margin-bottom: 12px;
+}
+
+.gifts__btn {
+	margin-bottom: 12px;
+	background-color: #181c29;
+	border-radius: 20px;
+}
+
+.gifts__btn a {
+	display: flex;
+	padding: 20px 32px;
+}
+
+.gifts__btn:hover {
+	color: #181c29;
+	background-color: #ffffff;
 }
