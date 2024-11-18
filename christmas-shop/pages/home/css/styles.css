@@ -75,6 +75,19 @@ body {
 	text-transform: uppercase;
 }
 
+.header2 {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 152%;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+}
+
+.paragraph {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 148%;
+}
 /* header */
 
 .header {
@@ -139,7 +152,7 @@ body {
 		url(../../../assets/img/bg-snow.png);
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	padding: 60px 0;
 	color: #ffffff;
 	text-align: center;
@@ -147,7 +160,6 @@ body {
 }
 
 .gifts__wrapper {
-	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -178,4 +190,56 @@ body {
 .gifts__btn:hover {
 	color: #181c29;
 	background-color: #ffffff;
+}
+
+/* about */
+
+.about {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 60px 82px;
+	background-color: #ff4646;
+	background-image: url(../../../assets/img/bg-snow.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #181c29;
+	text-align: center;
+}
+
+.about__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #ffffff;
+	border-radius: 20px;
+	width: 100%;
+}
+
+.about__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+	padding-left: 60px;
+}
+
+.about__text {
+	color: #ff4646;
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+
+.about__title {
+	margin-bottom: 20px;
+}
+
+.about__text2 {
+	margin-bottom: 60px;
+}
+
+.about__img img {
+	border-radius: 20px;
+	max-width: 638px;
 }
