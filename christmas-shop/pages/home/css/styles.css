@@ -92,6 +92,21 @@ body {
 	text-transform: uppercase;
 }
 
+.btn {
+	background-color: #181c29;
+	border-radius: 20px;
+}
+
+.link {
+	display: flex;
+	padding: 20px 32px;
+}
+
+.btn:hover {
+	color: #181c29;
+	background-color: #ffffff;
+}
+
 .header2 {
 	font-size: 24px;
 	font-weight: 600;
@@ -219,18 +234,6 @@ body {
 
 .gifts__btn {
 	margin-bottom: 12px;
-	background-color: #181c29;
-	border-radius: 20px;
-}
-
-.gifts__btn a {
-	display: flex;
-	padding: 20px 32px;
-}
-
-.gifts__btn:hover {
-	color: #181c29;
-	background-color: #ffffff;
 }
 
 /* about */
@@ -404,4 +407,69 @@ body {
 
 .purpure {
 	color: #ff43f7;
+}
+
+/* CTA section */
+
+.cta {
+	background-image: url(../../../assets/img/bg-forest.png),
+		url(../../../assets/img/bg-snow.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 668px;
+	color: #ffffff;
+	text-align: center;
+}
+
+.cta__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.cta__btn {
+	margin-bottom: 20px;
+}
+
+.cta__text {
+	margin-bottom: 8px;
+}
+
+.timer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: hsla(0, 0%, 100%, 0.4);
+	border-radius: 20px;
+	padding: 8px 12px 12px 12px;
+}
+
+.timer__item {
+	position: relative;
+	width: 80px;
+	height: 52px;
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+}
+
+.timer__time {
+	margin: 0;
+}
+
+.timer__text {
+	color: #ffffff;
+}
+
+.timer__item:not(:last-child):after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 8px;
+	right: 0;
+	width: 1px;
+	height: 20px;
+	background-color: hsla(0, 0%, 100%, 0.4);
 }
