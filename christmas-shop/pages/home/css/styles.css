@@ -54,7 +54,7 @@ body {
 
 .main {
 	background-color: #ff4646;
-	border-radius: 20px 20px 0 0;
+	border-radius: 20px;
 }
 
 .section {
@@ -416,6 +416,7 @@ body {
 		url(../../../assets/img/bg-snow.png);
 	background-position: center;
 	background-repeat: no-repeat;
+	border-radius: 0px 0px 20px 20px;
 	background-size: cover;
 	height: 668px;
 	color: #ffffff;
@@ -473,3 +474,5 @@ body {
 	height: 20px;
 	background-color: hsla(0, 0%, 100%, 0.4);
 }
+
+/* footer */
