@@ -203,7 +203,8 @@ body {
 	margin-right: 0;
 }
 
-.header__item:hover {
+.header__item:hover,
+.disabled {
 	color: #ff4646;
 	background-color: rgba(255, 70, 70, 0.1);
 	border-radius: 12px;

@@ -1,3 +1,9 @@
+.disabled,
+.active-mod {
+	pointer-events: none;
+	cursor: default;
+}
+
 .gift {
 	display: flex;
 	background-image: url(../../assets/img/bg-garland.png);
