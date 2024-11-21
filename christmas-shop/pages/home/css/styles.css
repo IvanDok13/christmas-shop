@@ -346,12 +346,19 @@ body {
 
 .arrow-left {
 	transform: rotate(180deg);
+	opacity: 0.4;
 }
 
 .arrow svg {
 	stroke: #fff;
 	height: 24px;
 	width: 24px;
+}
+
+.arrow-right:hover,
+.arrow-right:hover svg {
+	background-color: #ffffff;
+	stroke: #ff4646;
 }
 
 /* best */
