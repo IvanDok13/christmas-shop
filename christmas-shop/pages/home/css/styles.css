@@ -32,6 +32,7 @@
 	color: inherit;
 	padding: 0;
 	margin: 0;
+	transition: 0.25s ease;
 }
 
 html {
@@ -544,10 +545,12 @@ body {
 	padding: 20px;
 	gap: 12px;
 	width: 100%;
+	transition: all 0.3s ease-out;
 }
 
 .footer__card a:hover,
 .footer__made:hover {
+	transition: all 0.3s ease-out;
 	color: #ff4646;
 	stroke: #ff4646;
 }
