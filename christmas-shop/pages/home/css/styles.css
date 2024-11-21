@@ -143,7 +143,6 @@ body {
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
 	margin-bottom: 8px;
-	color: #4361ff;
 }
 
 .action-large {
@@ -423,11 +422,15 @@ body {
 	color: #181c29;
 }
 
-.green {
+.health {
 	color: #06a44f;
 }
 
-.purpure {
+.work {
+	color: #4361ff;
+}
+
+.harmony {
 	color: #ff43f7;
 }
 
