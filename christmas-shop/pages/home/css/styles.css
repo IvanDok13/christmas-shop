@@ -330,22 +330,28 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
-	align-items: center;
 	gap: 20px;
 }
 
 .arrow {
+	width: 56px;
+	height: 56px;
 	display: flex;
-	padding: 22px 21.5px 22px 22px;
-	border: 1px solid #ffffff;
+	align-items: center;
+	justify-content: center;
 	border-radius: 20px;
-	max-height: 56px;
-	max-width: 56px;
-	width: 100%;
+	border: 1px solid #fff;
+	cursor: pointer;
 }
 
-.arrow img {
-	display: flex;
+.arrow-left {
+	transform: rotate(180deg);
+}
+
+.arrow svg {
+	stroke: #fff;
+	height: 24px;
+	width: 24px;
 }
 
 /* best */
