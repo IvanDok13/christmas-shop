@@ -547,8 +547,7 @@ body {
 }
 
 .footer__card a:hover,
-.footer__made:hover,
-a:hover {
+.footer__made:hover {
 	color: #ff4646;
 	stroke: #ff4646;
 }
