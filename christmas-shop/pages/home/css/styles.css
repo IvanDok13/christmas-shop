@@ -422,6 +422,10 @@ body {
 	color: #181c29;
 }
 
+.best__menu-item:hover .header3 {
+	color: #ff4646;
+}
+
 .health {
 	color: #06a44f;
 }
