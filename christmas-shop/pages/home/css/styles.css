@@ -526,8 +526,11 @@ body {
 	width: 100%;
 }
 
-.footer__card a:hover {
+.footer__card a:hover,
+.footer__made:hover,
+a:hover {
 	color: #ff4646;
+	stroke: #ff4646;
 }
 
 .social__link {
@@ -539,10 +542,18 @@ body {
 	justify-content: center;
 }
 
+a {
+	color: inherit;
+}
+
 .social__link svg {
 	stroke: #181c29;
 	width: 24px;
 	height: 24px;
+}
+
+.social__link:hover svg {
+	stroke: #ff4646;
 }
 
 .footer__social {
