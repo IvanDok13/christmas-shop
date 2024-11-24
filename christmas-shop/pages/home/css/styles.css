@@ -505,9 +505,9 @@ body {
 
 /* footer */
 
-.footer {
+/* .footer {
 	padding: 60px 82px;
-}
+} */
 
 .footer__wrapper,
 .footer__cards,
@@ -517,6 +517,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	width: 100%;
 }
 
 .footer__wrapper,
@@ -591,7 +592,7 @@ a {
 
 /* media queries */
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
 	.section {
 		padding: 60px 8px;
 	}
@@ -602,5 +603,14 @@ a {
 
 	.about__img {
 		display: flex;
+	}
+
+	.footer__cards {
+		flex-wrap: wrap;
+	}
+
+	.footer__card {
+		gap: 12px;
+		margin-bottom: 0;
 	}
 }
