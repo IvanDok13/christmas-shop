@@ -553,6 +553,10 @@ body {
 	stroke: #ff4646;
 }
 
+.footer__text img {
+	width: 80px;
+}
+
 .social__link {
 	width: 40px;
 	height: 40px;
