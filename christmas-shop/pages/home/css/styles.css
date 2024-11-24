@@ -271,12 +271,24 @@ body {
 
 .about__text {
 	color: #ff4646;
+	margin-top: 60px;
 	margin-bottom: 20px;
 }
 
-.about__img img {
+.about__text2 {
+	max-width: 426px;
+	margin-bottom: 60px;
+}
+
+.about__img {
 	border-radius: 20px;
 	max-width: 638px;
+	height: 528px;
+	background-image: url(../../../assets/img/santa.png);
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 /* become */
@@ -505,10 +517,6 @@ body {
 
 /* footer */
 
-/* .footer {
-	padding: 60px 82px;
-} */
-
 .footer__wrapper,
 .footer__cards,
 .footer__card,
@@ -601,13 +609,9 @@ a {
 		padding: 12px 8px;
 	}
 
-	.about__info {
-		padding: 15px;
-	}
-
-	.about__img {
-		display: flex;
-	}
+	/* .about__info {
+		width: 50%;
+	} */
 
 	.footer__cards {
 		flex-wrap: wrap;
