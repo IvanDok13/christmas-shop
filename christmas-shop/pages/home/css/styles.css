@@ -257,6 +257,7 @@ body {
 	justify-content: space-between;
 	background-color: #ffffff;
 	border-radius: 20px;
+	gap: 15px;
 	width: 100%;
 }
 
@@ -270,12 +271,7 @@ body {
 
 .about__text {
 	color: #ff4646;
-	margin-top: 60px;
 	margin-bottom: 20px;
-}
-
-.about__text2 {
-	margin-bottom: 60px;
 }
 
 .about__img img {
@@ -305,11 +301,13 @@ body {
 .become__slider-wrapper {
 	display: flex;
 	flex-direction: column;
+	width: 100%;
 }
 
 .slider-wrap {
+	display: flex;
 	margin: 0 auto;
-	width: 1276px;
+	max-width: 1276px;
 	margin-bottom: 20px;
 }
 
@@ -585,4 +583,20 @@ a {
 .footer__social,
 .footer__rights {
 	margin-bottom: 12px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1100px) {
+	.section {
+		padding: 60px 8px;
+	}
+
+	.about__info {
+		padding: 15px;
+	}
+
+	.about__img {
+		display: flex;
+	}
 }
