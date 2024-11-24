@@ -309,7 +309,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	text-align: left;
-	padding-left: 60px;
+	margin-left: 60px;
 }
 
 .about__text {
@@ -697,7 +697,12 @@ a {
 		align-items: center;
 	}
 
+	.about__wrapper {
+		gap: 0;
+	}
+
 	.about__info {
-		width: 50%;
+		margin: 46px 60px;
+		max-width: 256px;
 	}
 }
