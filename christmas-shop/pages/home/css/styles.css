@@ -726,4 +726,8 @@ a {
 	.gifts__wrapper {
 		max-width: 364px;
 	}
+
+	.cta {
+		height: 704px;
+	}
 }
