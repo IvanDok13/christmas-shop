@@ -63,3 +63,17 @@
 	flex-wrap: wrap;
 	transition: 0.5s ease;
 }
+
+@media screen and (max-width: 500px) {
+	.gift__title {
+		max-width: 364px;
+	}
+
+	.menu__form {
+		gap: 0;
+	}
+
+	.menu__label {
+		padding: 12px 8px;
+	}
+}
