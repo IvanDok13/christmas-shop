@@ -273,10 +273,6 @@ body {
 	margin-bottom: 12px;
 }
 
-.gifts__text2 {
-	margin-bottom: 60px;
-}
-
 .gifts__title {
 	max-width: 426px;
 	margin-bottom: 12px;
@@ -721,6 +717,10 @@ a {
 	.gifts {
 		height: 572px;
 		padding-top: 120px;
+	}
+
+	.gifts__text2 {
+		margin-bottom: 60px;
 	}
 
 	.gifts__wrapper {
