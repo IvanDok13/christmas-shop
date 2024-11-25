@@ -267,19 +267,18 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin: 60px 0;
 }
 
 .gifts__text {
 	margin-bottom: 12px;
 }
 
-.gifts__text:last-child {
-	margin-bottom: 0px;
+.gifts__text2 {
+	margin-bottom: 60px;
 }
 
 .gifts__title {
-	width: 426px;
+	max-width: 426px;
 	margin-bottom: 12px;
 }
 
@@ -704,5 +703,27 @@ a {
 	.about__info {
 		margin: 46px 60px;
 		max-width: 256px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.about__wrapper {
+		flex-wrap: wrap;
+	}
+
+	.about__info {
+		max-width: 100%;
+		margin: 0 20px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.gifts {
+		height: 572px;
+		padding-top: 120px;
+	}
+
+	.gifts__wrapper {
+		max-width: 364px;
 	}
 }
