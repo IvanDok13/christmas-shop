@@ -712,6 +712,12 @@ a {
 		margin-right: 0px;
 	}
 
+	.disabled {
+		color: #181c29;
+		background-color: #ffff;
+		border-radius: 12px;
+	}
+
 	.about__wrapper {
 		gap: 0;
 	}
