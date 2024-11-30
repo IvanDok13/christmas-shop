@@ -32,7 +32,6 @@
 	color: inherit;
 	padding: 0;
 	margin: 0;
-	transition: 0.25s ease;
 }
 
 html {
@@ -677,8 +676,8 @@ a {
 	}
 
 	.header__burger.active {
-		width: 44px;
-		height: 44px;
+		width: 40px;
+		height: 40px;
 	}
 
 	.header__nav {
@@ -687,9 +686,8 @@ a {
 		height: 100%;
 		top: 0;
 		left: 0;
-		background-color: #e1d4c9;
+		background-color: #ffffff;
 		z-index: 2;
-		padding: 160px 40px 0;
 		transform: translateX(100%);
 		transition: 0.3s linear;
 	}
@@ -699,6 +697,19 @@ a {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: center;
+	}
+
+	.header__list {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+		margin-top: 258px;
+	}
+
+	.header__item {
+		margin-right: 0px;
 	}
 
 	.about__wrapper {
@@ -723,6 +734,10 @@ a {
 }
 
 @media screen and (max-width: 480px) {
+	.header__list {
+		margin-top: 48px;
+	}
+
 	.gifts {
 		height: 572px;
 		padding-top: 120px;
