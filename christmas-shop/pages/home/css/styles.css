@@ -630,6 +630,7 @@ a {
 	.arrow:disabled {
 		opacity: 0.4;
 		user-select: none;
+		cursor: default;
 	}
 
 	.best__menu-item:hover .header3 {
