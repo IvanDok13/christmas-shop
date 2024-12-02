@@ -387,7 +387,6 @@ body {
 
 .arrow-left {
 	transform: rotate(180deg);
-	opacity: 0.4;
 }
 
 .arrow svg {
@@ -622,10 +621,15 @@ a {
 		border-radius: 12px;
 	}
 
-	.arrow-right:hover,
-	.arrow-right:hover svg {
+	.arrow:not([disabled]):hover,
+	.arrow:not([disabled]):hover svg {
 		background-color: #ffffff;
 		stroke: #ff4646;
+	}
+
+	.arrow:disabled {
+		opacity: 0.4;
+		user-select: none;
 	}
 
 	.best__menu-item:hover .header3 {
