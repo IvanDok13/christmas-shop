@@ -1,8 +1,10 @@
 import Burger from '../../js/burger.js'
+import topBtn from '../../js/topBtn.js'
 
 const burger = new Burger()
 document.addEventListener('DOMContentLoaded', () => {
 	burger.bindListeners()
+	topBtn.bindListeners
 })
 
 function removeBurger() {
