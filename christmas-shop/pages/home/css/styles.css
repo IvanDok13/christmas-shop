@@ -361,6 +361,7 @@ body {
 	align-items: center;
 	gap: 20px;
 	width: 1993px;
+	transition: all 0.2s ease-out;
 }
 
 .slider-item img {
