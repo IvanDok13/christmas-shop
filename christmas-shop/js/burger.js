@@ -29,7 +29,7 @@ class Burger {
 	bindListeners() {
 		const context = this
 
-		this.burgerBtn.addEventListener('click', () => this.toggleBurger())
+		context.burgerBtn.addEventListener('click', () => context.toggleBurger())
 
 		window.addEventListener('keydown', e => {
 			if (
@@ -48,8 +48,8 @@ class Burger {
 				context.toggleBurger()
 		})
 
-		this.NavLinks.addEventListener('click', e =>
-			this.handleClick(e, this.NavLinks)
+		context.NavLinks.addEventListener('click', e =>
+			context.handleClick(e, context.NavLinks)
 		)
 	}
 }
