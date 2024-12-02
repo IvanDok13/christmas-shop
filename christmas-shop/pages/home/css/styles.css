@@ -360,6 +360,7 @@ body {
 	flex-wrap: nowrap;
 	align-items: center;
 	gap: 20px;
+	width: 1993px;
 }
 
 .slider-item img {
