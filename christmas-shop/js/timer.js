@@ -3,9 +3,9 @@ const hrs = document.getElementById('hrs')
 const min = document.getElementById('min')
 const sec = document.getElementById('sec')
 
-const currentDate = new Date().getFullYear()
-
-const newYearTime = new Date(`January 01 ${currentDate + 1} 00:00:00`)
+const today = new Date()
+const currentYear = today.getFullYear()
+const newYearTime = Date.parse(`${currentYear}-12-31T24:00:00Z`)
 
 function Timer() {
 	const today = Date.now()
