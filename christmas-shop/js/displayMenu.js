@@ -1,30 +1,34 @@
-import itemsFromJson from '../data/items.json' with { type: 'json' }
-import Menu from './menuPars.js'
+class Menu {
+	constructor(name, description, img, superpowers, category) {
+		this.img = img
+		this.name = name
+		this.description = description
+		this.superpowers = superpowers
+		this.category = category
+	}
 
-let items = []
-let itemsList = document.querySelector('.best__menu')
-
-function displayItems(filter) {
-	itemsList.innerHTML = ''
-	for (let i = 0; i < items.length; i += 1) {
-		if (items[i].category === filter) {
-			let item = items[i].insertHTML(i)
-
-			itemsList.append(item)
-		}
+	insertHTML() {
+		return new DOMParser().parseFromString(
+			`  
+  <div class="best__menu-item"  >
+    <div class="menu-img">
+      <img
+       src="${this.img}"
+       alt="${this.category}"
+      >
+    </div>
+    <div class="best__menu-desc">
+      <h4 class="header4">
+      ${this.category}
+      </h4>
+      <h3 class="header3">
+       ${this.name}
+      </h3>
+    </div>
+  </div>`,
+			'text/html'
+		).body.firstChild
 	}
 }
 
-for (let i = 0; i < itemsFromJson.length; i += 1) {
-	items.push(
-		new Menu(
-			itemsFromJson[i]['name'],
-			itemsFromJson[i]['description'],
-			itemsFromJson[i]['img'],
-			itemsFromJson[i]['superpowers'],
-			itemsFromJson[i]['category']
-		)
-	)
-}
-
-export default displayItems
+export default Menu
