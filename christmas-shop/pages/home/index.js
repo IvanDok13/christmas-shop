@@ -10,12 +10,3 @@ document.addEventListener('DOMContentLoaded', () => {
 	slider.bindListeners()
 	setInterval(Timer, 1000)
 })
-
-function removeBurger() {
-	const display = window.innerWidth
-	if (display > 768) {
-		burger.clickLink()
-	}
-}
-
-window.addEventListener('resize', removeBurger)
