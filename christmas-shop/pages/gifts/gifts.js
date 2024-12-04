@@ -9,20 +9,11 @@ const burger = new Burger()
 document.addEventListener('DOMContentLoaded', () => {
 	burger.bindListeners()
 	topBtn
-})
-
-function removeBurger() {
-	const display = window.innerWidth
-	if (display > 768) {
-		burger.clickLink()
+	for (let i = 0; i < TABS.length; i += 1) {
+		TABS[i].addEventListener('click', () =>
+			filterItems(TABS[i].dataset.tab, displayItems)
+		)
 	}
-}
 
-for (let i = 0; i < TABS.length; i += 1) {
-	TABS[i].addEventListener('click', () =>
-		filterItems(TABS[i].dataset.tab, displayItems)
-	)
-}
-
-displayItems('all')
-window.addEventListener('resize', removeBurger)
+	displayItems('all')
+})

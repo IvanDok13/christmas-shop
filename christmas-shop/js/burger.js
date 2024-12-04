@@ -26,6 +26,10 @@ class Burger {
 		this.body.classList.remove(BurgerClasses.body)
 	}
 
+	// removeBurger() {
+
+	// }
+
 	bindListeners() {
 		const context = this
 
@@ -51,6 +55,12 @@ class Burger {
 		context.NavLinks.addEventListener('click', e =>
 			context.handleClick(e, context.NavLinks)
 		)
+		window.addEventListener('resize', () => {
+			const display = window.innerWidth
+			if (display > 768) {
+				context.clickLink()
+			}
+		})
 	}
 }
 
