@@ -1,5 +1,6 @@
 import itemsFromJson from '../data/items.json' with { type: 'json' }
 import Menu from './menuPars.js'
+import toggleModal from './modal.js'
 
 let itemsList = document.querySelector('.best__menu')
 let items = []
@@ -23,9 +24,11 @@ function displayItems(filter) {
 		if (items[i].category === filter) {
 			item = items[i].insertHTML(i)
 			itemsList.append(item)
+			item.addEventListener('click', () => toggleModal(items[i], i))
 		} else if (filter === 'all') {
 			item = items[i].insertHTML(i)
 			itemsList.append(item)
+			item.addEventListener('click', () => toggleModal(items[i], i))
 		}
 	}
 }

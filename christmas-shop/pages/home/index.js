@@ -1,6 +1,7 @@
 import itemsFromJson from '../../data/items.json' with { type: 'json' }
 import Burger from '../../js/burger.js'
 import Menu from '../../js/menuPars.js'
+import toggleModal from '../../js/modal.js'
 import Slider from '../../js/slider.js'
 import Timer from '../../js/timer.js'
 
@@ -34,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			let cardsNum = Math.floor(Math.random() * 36)
 			item = arr[cardsNum].insertHTML(i)
 			itemsList.append(item)
+			item.addEventListener('click', () => toggleModal(items[i], i))
 		}
 	}
 
