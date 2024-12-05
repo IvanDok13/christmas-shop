@@ -63,7 +63,6 @@ class Slider {
 			context.generateConst()
 			context.move()
 		})
-		console.log(context.currentSlide)
 	}
 }
 
