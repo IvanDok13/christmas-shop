@@ -1,45 +1,16 @@
-import { elementHTML } from '../utils/const.js'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
 
-class Menu {
-	constructor(name, description, img, superpowers, category) {
-		this.img = img
-		this.name = name
-		this.description = description
-		this.superpowers = superpowers
-		this.category = category
-	}
-
-	insertHTML() {
-		return new DOMParser().parseFromString(
-			`  
-  <div class="best__menu-item"  >
-    <div class="menu-img">
-      <img
-       src="${this.img}"
-       alt="${this.category}"
-      >
-    </div>
-    <div class="best__menu-desc">
-      <h4 class="header4">
-      ${this.category}
-      </h4>
-      <h3 class="header3">
-       ${this.name}
-      </h3>
-    </div>
-  </div>`,
-			'text/html'
-		).body.firstChild
-	}
-
-	insertHTMLModalWindow(id) {
-		return new DOMParser().parseFromString(
-			`
-    <div class="modal-window" data-id="${id}">
+  <div class="modal-window" data-id="${id}">
     <svg class="close-btn" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-    <path d="M30 10L10 30" stroke="#181C29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-    <path d="M10 10L30 30" stroke="#181C29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-  </svg>
+      <path d="M30 10L10 30" stroke="#181C29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M10 10L30 30" stroke="#181C29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
     <div class="modal-window__img">
       <img src="${this.img}" alt="${this.category}" />
     </div>
@@ -51,7 +22,7 @@ class Menu {
         <h4 class="header4">Adds superpowers to:</h4>
         <div class="super__rating">
           <div class="super__power live">
-          <div class="super__power-text">
+          <div className="super__power-text">
             <p class="paragraph">live</p>
             <p class="paragraph">${this.superpowers['live']}</p>
             </div>
@@ -61,7 +32,7 @@ class Menu {
           </div>
 
           <div class="super__power create">
-          <div class="super__power-text">
+          <div className="super__power-text">
             <p class="paragraph">create</p>
             <p class="paragraph">${this.superpowers['create']}</p>
             </div>
@@ -71,7 +42,7 @@ class Menu {
           </div>
 
           <div class="super__power love">
-            <div class="super__power-text">
+            <div className="super__power-text">
               <p class="paragraph">love</p>
               <p class="paragraph">${this.superpowers['love']}</p>
             </div>
@@ -81,9 +52,9 @@ class Menu {
           </div>
 
           <div class="super__power dream">
-          <div class="super__power-text">
-            <p class="paragraph">dream</p>
-            <p class="paragraph">${this.superpowers['dream']}</p>
+            <div className="super__power-text">
+              <p class="paragraph">dream</p>
+              <p class="paragraph">${this.superpowers['dream']}</p>
             </div>
             <div class="snowflakes-container">
               ${elementHTML.repeat(5)}
@@ -91,10 +62,6 @@ class Menu {
           </div>
       </div>
     </div>
-  </div>`,
-			'text/html'
-		).body.firstChild
-	}
-}
+  </div>
 
-export default Menu
+</html>
