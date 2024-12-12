@@ -1,31 +1,18 @@
-import itemsFromJson from '../../data/items.json' with { type: 'json' }
 import Burger from '../../js/burger.js'
-import Menu from '../../js/menuPars.js'
 import toggleModal from '../../js/modal.js'
 import Slider from '../../js/slider.js'
 import Timer from '../../js/timer.js'
+import getItems from '../../utils/jsonToArr.js'
 
 const burger = new Burger()
 const slider = new Slider()
-const menu = new Menu()
+const items = getItems()
 
 document.addEventListener('DOMContentLoaded', () => {
 	burger.bindListeners()
 	slider.bindListeners()
 	setInterval(Timer, 1000)
 
-	let items = []
-	for (let i = 0; i < itemsFromJson.length; i += 1) {
-		items.push(
-			new Menu(
-				itemsFromJson[i]['name'],
-				itemsFromJson[i]['description'],
-				itemsFromJson[i]['img'],
-				itemsFromJson[i]['superpowers'],
-				itemsFromJson[i]['category'].toLowerCase()
-			)
-		)
-	}
 	let itemsList = document.querySelector('.best__menu')
 
 	function randomItems(arr) {
