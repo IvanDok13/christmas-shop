@@ -14,6 +14,5 @@ document.addEventListener('DOMContentLoaded', () => {
 			filterItems(TABS[i].dataset.tab, displayItems)
 		)
 	}
-
 	displayItems('all')
 })
