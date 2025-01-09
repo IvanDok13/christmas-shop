@@ -1,4 +1,5 @@
 import getItems from '../utils/jsonToArr.js'
+import { random } from './getRandom.js'
 import toggleModal from './modal.js'
 
 let itemsList = document.querySelector('.best__menu')
@@ -13,10 +14,7 @@ function displayItems(filter) {
 			itemsList.append(item)
 			item.addEventListener('click', () => toggleModal(items[i], i))
 		} else if (filter === 'all') {
-			let cardsNum = Math.floor(Math.random() * 36)
-			item = items[cardsNum].insertHTML(i)
-			itemsList.append(item)
-			item.addEventListener('click', () => toggleModal(items[i], i))
+			random(items)
 		}
 	}
 }

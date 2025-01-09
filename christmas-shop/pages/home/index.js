@@ -1,5 +1,5 @@
 import Burger from '../../js/burger.js'
-import randomItems from '../../js/getRandom.js'
+import { randomItems } from '../../js/getRandom.js'
 import Slider from '../../js/slider.js'
 import Timer from '../../js/timer.js'
 import getItems from '../../utils/jsonToArr.js'
