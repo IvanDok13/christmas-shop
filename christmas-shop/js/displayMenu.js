@@ -13,7 +13,8 @@ function displayItems(filter) {
 			itemsList.append(item)
 			item.addEventListener('click', () => toggleModal(items[i], i))
 		} else if (filter === 'all') {
-			item = items[i].insertHTML(i)
+			let cardsNum = Math.floor(Math.random() * 36)
+			item = items[cardsNum].insertHTML(i)
 			itemsList.append(item)
 			item.addEventListener('click', () => toggleModal(items[i], i))
 		}
